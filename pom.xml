@@ -27,7 +27,7 @@
         <testutilsVersion>1.6.0</testutilsVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <MODULE_ID>${project.parent.artifactId}</MODULE_ID>
-        <MODULE_NAME>${name}</MODULE_NAME>
+        <MODULE_NAME>${project.name}</MODULE_NAME>
         <MODULE_VERSION>${project.parent.version}</MODULE_VERSION>
         <MODULE_PACKAGE>${project.parent.groupId}.${project.parent.artifactId}</MODULE_PACKAGE>
     </properties>
@@ -255,12 +255,12 @@
         <repository>
             <id>openmrs-repo-modules-pih</id>
             <name>OpenMRS PIH Modules</name>
-            <url>https://mavenrepo.openmrs.org/nexus/content/repositories/modules-pih/</url>
+            <url>https://openmrs.jfrog.io/artifactory/modules-pih/</url>
         </repository>
         <snapshotRepository>
             <id>openmrs-repo-modules-pih-snapshots</id>
             <name>OpenMRS PIH Module Snapshots</name>
-            <url>https://mavenrepo.openmrs.org/nexus/content/repositories/modules-pih-snapshots</url>
+            <url>https://openmrs.jfrog.io/artifactory/modules-pih-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 

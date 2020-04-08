@@ -1,4 +1,4 @@
-Data Hub Module
+PIH Experimental Module
 ==============================
 
-OpenMRS module for enabling more effective and efficient data access
+OpenMRS module for testing experimental code and features

@@ -17,13 +17,6 @@
         </developer>
     </developers>
 
-    <scm>
-        <connection></connection>
-        <developerConnection></developerConnection>
-        <url></url>
-        <tag>HEAD</tag>
-    </scm>
-
     <modules>
         <module>api</module>
         <module>omod</module>
@@ -251,11 +244,31 @@
         </pluginManagement>
     </build>
 
+    <scm>
+        <connection>scm:git:git@github.com:PIH/openmrs-module-pihx.git</connection>
+        <developerConnection>scm:git:git@github.com:PIH/openmrs-module-pihx.git</developerConnection>
+        <url>scm:git:git@github.com:PIH/openmrs-module-pihx.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>openmrs-repo-modules-pih</id>
+            <name>OpenMRS PIH Modules</name>
+            <url>https://mavenrepo.openmrs.org/nexus/content/repositories/modules-pih/</url>
+        </repository>
+        <snapshotRepository>
+            <id>openmrs-repo-modules-pih-snapshots</id>
+            <name>OpenMRS PIH Module Snapshots</name>
+            <url>https://mavenrepo.openmrs.org/nexus/content/repositories/modules-pih-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>openmrs-repo</id>
             <name>OpenMRS Nexus Repository</name>
-            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
+            <url>https://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
         </repository>
     </repositories>
 
@@ -263,24 +276,11 @@
         <pluginRepository>
             <id>openmrs-repo</id>
             <name>OpenMRS Nexus Repository</name>
-            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
+            <url>https://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
-    <distributionManagement>
-        <repository>
-            <id>openmrs-repo-modules</id>
-            <name>Modules</name>
-            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules/</url>
-        </repository>
-        <snapshotRepository>
-            <id>openmrs-repo-snapshots</id>
-            <name>OpenMRS Snapshots</name>
-            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
 
 </project>
